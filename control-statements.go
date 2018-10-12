@@ -32,14 +32,13 @@ l:
 	}
 
 	//goto
+
+	a := 1
 t:
-	for true {
-		for j := 0; j < 2; j++ {
-			println(j)
-			if j == 1 {
-				goto t //不主张使用goto语句， 以免造成程序流程的混乱
-			}
-		}
-		println("outer")
+	if a < 10 {
+		a++
+		goto t //不主张使用goto语句， 以免造成程序流程的混乱
+	} else {
+		println(a) //10
 	}
 }
