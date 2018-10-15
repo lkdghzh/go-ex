@@ -37,6 +37,7 @@ l:
 t:
 	if a < 10 {
 		a++
+
 		goto t //不主张使用goto语句， 以免造成程序流程的混乱
 	} else {
 		println(a) //10
